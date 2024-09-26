@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="light-mode">
+  <div class="mode-switcher">
+    <input type="checkbox" id="mode-switch" />
+    <label for="mode-switch">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </label>
+  </div>
+   
+  <div class="quiz-container">
+    <div class="general">
+     <details>
+        <summary>Category</summary>
+        <p id="category"></p>
+      </details>
+    
+      <p id="time">0:0:0</p>
+    </div>
+    <div id="quiz">
+      <h1 class="quiz-title">Quiz Game</h1>
+     
+      <!-- Question Display -->
+      <div class="question-container">
+        <p id="question">Ready to start?lets begin...</p>
+      </div>
+      
+      <!-- Options Display -->
+      <div class="options-container">
+        <button class="option-btn ">Option A</button>
+        <button class="option-btn ">Option B</button>
+        <button class="option-btn ">option C</button>
+        <button class="option-btn ">Option D</button>
+      </div>
+      
+      <!-- Score and Progress Display -->
+      <div class="score-container">
+        <p id="score">Score: 0</p>
+        <p id="progress"></p>
+      </div>
+
+      <!-- Submit Button -->
+      <button id="next-btn" class="submit-btn">Next</button>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
